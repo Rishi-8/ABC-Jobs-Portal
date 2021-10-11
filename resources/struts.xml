@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+
+	<constant name="struts.devMode" value="false" />
+	
+	<package name="default" extends="struts-default">
+		<action name = "Register" class = "com.finalproject.action.RegisterAction">
+			<result name="Register">thankyou.jsp</result>
+		</action>
+		<action name="Login" class="com.finalproject.action.LoginAction">  
+			<result name="login">home.jsp</result>  
+			<result name="error">loginerror.jsp</result>  
+		</action>
+		<action name="logout" class="com.finalproject.action.LoginAction" method="logout">  
+			<result name="success" >login.jsp</result>  
+		</action> 
+		<action name="Profile" class="com.finalproject.action.ProfileAction">  
+			<result name="success" >profilesuccess.jsp</result>  
+			<result name="error" >profilerror.jsp</result>  
+		</action>  
+		<action name="UpdatePro" class="com.finalproject.action.ProfileAction">
+			<result name="success">updateprofile.jsp</result>
+		</action>
+		<action name="Update" class="com.finalproject.action.UpdateProfileAction">
+			<result name="Update" type="chain">SeeProfile</result>
+		</action>
+		<action name="SeeProfile" class="com.finalproject.action.ProfileAction">
+			<result name="success">/profilesuccess.jsp</result>
+		</action>
+		<action name="Home" class="com.finalproject.action.ProfileAction">
+			<result name="success">home.jsp</result>
+		</action>
+		<action name="ForgotPassEmail" class="com.finalproject.action.ForgotPassEmailAction">
+			<result name="send">confirmemail.jsp</result>
+			<result name="error">ForgotPassEmail.jsp</result>
+		</action>
+		<action name="change" class="com.finalproject.action.UpdatePassAction">
+			<result name="update">UpdatePassSuccess.jsp</result>
+			<result name="error">updatepass.jsp</result>
+		</action>
+		<action name="Search" class="com.finalproject.action.SearchAction">
+			<result name="success">searchresult.jsp</result>
+		</action>
+		<action name="searchuser" class="com.finalproject.action.UserProfileAction">
+			<result name="VIEW">userprofile.jsp</result>
+		</action>
+		<action name="adminlogin" class="com.finalproject.action.ALoginAction">
+			<result name="login">adminloginsuccess.jsp</result>
+			<result name="error">adminlogin.jsp</result>
+		</action>
+		<action name="monitor" class="com.finalproject.action.AMonitorAction">
+			<result name="DETAILS">adminmonitor.jsp</result>
+		</action>
+		<action name="deleteuser" class="com.finalproject.action.ADeleteAction">
+			<result name="DELETE">admindelete.jsp</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ABC Jobs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	.but:hover{
+  		border: #EBEBEB 1px solid;
+  		color:black;
+  		background-color: white;
+  		box-shadow:1px 2px 5px rgba(0,0,0,0.50);
+  	}
+  	.but{
+  		background-color: white;
+  		border: #EBEBEB 1px solid;
+  		box-shadow:0 1px 2px rgba(0,0,0,0.18);
+  		color:black;
+  		border-radius: 22px;
+  		font-weight:600;
+  		padding :8px 20px;
+  	}
+  	.btn-light{
+  		background-color: white;
+  		border-radius: 22px;
+  		font-weight:600;
+  		padding :8px 20px;
+  		border: none;
+  	}
+  	.btn:focus, .btn:active {
+    	outline: none !important;
+    	box-shadow: none !important;
+    }
+    .ind{
+    	color: rgb(228,29,92);
+    	font-size: 50px;
+    	font-weight: 
+    }
+    .indinfo{
+    	list-style-type: none;
+    	background-color: red;
+    	margin: 15px 10px;
+  	}
+  	.card{
+  		border: #EBEBEB 1px solid;
+  		box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	}
+  	.equal{
+  		display:flex;
+  		justify-content: space-between;
+  		padding: 30px 80px;
+  		margin-bottom: 40px;
+  	}
+  	.comimg{
+  		margin-top:auto;
+  		margin-bottom:auto;
+  	}
+  	.promo{
+  		height:400px;
+  		background-color:#d6edf6;
+  		position: relative;
+  		display:flex;
+  		justify-content: center;
+  		align-items: center;
+  	}
+  	.semi{
+  		position:absolute;
+  		top:0;
+  		left:10%
+  	}
+  	.promomain{
+  		display: inline-flex;
+  		align-items:center;
+  		margin-right: 2rem;
+  	}
+  	.promo-text-container{
+  		display:inline-flex;
+  		flex-direction: column;
+  		padding:0 20px;
+  		justify-content: center;
+  		width:460px;
+  		line-height:35px;
+  	}
+  	.imview{
+  		position: relative;
+  		justify-content: center;
+  		align-items: center;
+  		display: flex;
+  		
+  	}
+  	.imtext{
+  		position:absolute;
+  		top:30%;
+  	}
+  	.footer{
+  		background-color: #f8f8f8;
+  		padding:2.7rem 0;
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  	}
+  	.copyright{
+  		display: flex;
+  		padding: 1rem 0;
+  	}
+  </style>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-sm ">
+			<div class="navbar-brand text-center">
+				<a href ="index.html" style="text-decoration: none;color:#5ab9ea;font-size: 130%" class="font-weight-bold"><img src="images/com.png" height="10%" width="10%">ABC JOBS</a>
+			</div>
+		  	<ul class="navbar-nav ml-auto col-md-4">
+			    <li class="nav-item">
+			     	<a href="login.jsp"><button type="button" class="btn btn-light mr-1">Log in</button></a>
+			    </li>
+			    <li class="nav-item">
+			      	<a href="adminlogin.jsp"><button type="button" class="btn btn-light ">Admin Log in</button></a>
+			    </li>
+			    <li class="nav-item ml-3">
+			     	<a href="register.jsp"><button type="button" class="btn but ">Register</button></a>
+			    </li>
+		  	</ul>
+		</nav>
+		
+		<div class="row">
+		
+			<div class="col-sm-8 ml-5 mt-5">
+				<h1 class="display-4 ind">Can't find your dream job, Don't worry We'll help you find it.</h1>
+			</div>
+			
+			<div class="col-sm-12 indbg" style="padding: 20px 80px 60px 80px">
+			
+				<div class="card-deck">
+					<div class="card">
+						<img class="card-img-top" src="images/interview.jpg">
+						<div class="card-body">
+							<h3 class="card-title">Interview</h3>
+							<p class="card-text">Opportnity to interview with top recruiters</p>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="images/workspace.png">
+						<div class="card-body">
+							<h3 class="card-title">Company</h3>
+							<p class="card-title">lots of company to choose</p>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="images/pro.jpg">
+						<div class="card-body">
+							<h3 class="card-title">Profile</h3>
+							<p class="card-text">Get noticed in real world</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="col-sm-12 mt-4">
+			<h3 class="ml-5">Few notable companies associated with us</h3>
+			<div class="equal">
+				<img src="images/google.png" class="comimg" height="10%" width="10%">
+				<img src="images/ibm.png" class="comimg" height="10%" width="10%">
+				<img src="images/tesla.png" class="comimg" height="8%" width="8%">
+				<img src="images/openai.png" class="comimg" height="10%" width="10%">
+				<img src="images/apple.png" class="comimg" height="10%" width="10%">
+				<img src="images/facebook.png" class="comimg" height="10%" width="10%">
+				<img src="images/oracle.png" class="comimg" height="10%" width="10%">
+				<img src="images/commaai.png" class="comimg" height="10%" width="10%">
+			</div>
+		</div>
+		</div>
+		<section class="promo">
+			<div class="semi"><img src="images/semicircle.png"></div>
+			<div class="promomain"><img src ="images/promo.png"></div>
+			<div class="promo-text-container">
+			<h2>Job seekers at ABC</h2>
+			<p style="font-size:24px"><strong>Several people</strong> have found their dream career or satisfying companies associating with us</p>
+			<a href="register.jsp"><button type="button" class="btn btn-primary btn-lg">Register</button></a>
+			</div>
+		</section>	
+		<section class="final">
+			<div class="imview">
+				<img src="images/prolang.jpg" width="100%" style="opacity:0.5">
+				<div class="imtext text-center" style="width:50%">
+					<h1>Looking for a career chase or career change in tech,you are on the right place </h1>
+				</div>
+			</div>
+		</section>
+		<div class="footer">
+			<div class="copyright">
+				© 2020 ABC JOBS. All rights reserved.
+			</div>
+		</div>
+</body>
+</html>
